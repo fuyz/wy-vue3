@@ -1,10 +1,14 @@
 <template>
-  <router-view />
-  <!-- <RouterView /> -->
+  1
+  <!-- <router-view /> -->
+  <RouterView />
+  123
+  <RouterLink to="/home">Go to Home</RouterLink>
+  <RouterLink to="/news">Go to news</RouterLink>
   <!-- <Tabbar /> -->
 </template>
 <script setup>
-// import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router'
 import Tabbar from '@/views/layout/Tabbar.vue'
 import { onMounted, reactive, defineOptions } from 'vue'
 

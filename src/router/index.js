@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createMemoryHistory } from 'vue-router'
 
 const routes = [
   {
@@ -15,7 +15,7 @@ const routes = [
     name: 'Home',
     meta: { keepAlive: true },
     // component: () => import('../views/Home/index.vue'),
-    component: () => import('../views/HomeView.vue'),
+    component: () => import('../views/AboutView.vue'),
   },
   {
     path: '/news',
@@ -84,7 +84,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createMemoryHistory(),
   routes,
 })
 
